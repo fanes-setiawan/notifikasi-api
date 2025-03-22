@@ -40,7 +40,7 @@ def send_firebase_notification(token: str, title: str, body: str, data: dict):
     try:
         access_token = get_firebase_access_token()
         print("Access token:", access_token)
-        url = "https://fcm.googleapis.com/v1/projects/hydsmartfire/messages:send"
+        url = "https://fcm.googleapis.com/v1/projects/back-up-hydroponic/messages:send"
 
         payload = {
             "message": {
